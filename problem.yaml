@@ -1,0 +1,13 @@
+# problem.yaml
+author: chwo@itu.dk
+source: Kattis
+license: cc by-sa
+keywords: String Find Search Match
+limits:
+  time_safety_margin: 3           # (default is 2)
+  memory: 1024                    # MB
+  compilation_time: 180           # seconds
+  time_multiplier: 1              # time limit is accepted/*.cpp time * multipler
+  validation_time: 180            # seconds
+  output: 50                      # MB
+  validation_memory: 1024         # MB

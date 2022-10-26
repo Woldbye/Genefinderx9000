@@ -1,0 +1,31 @@
+\newcommand{\maxN}{10^6} %
+\newcommand{\maxM}{10^6} %
+\newcommand{\trm}{\textrm} %
+\newcommand {\animN}{$\trm{animal}_\trm{n}\,$} %
+\problemname{Genefinderx9000}
+Bobby is a biology researcher with a great interest in genetics. \\
+He loves to wander out in the wild collecting new DNA samples for his database which he later uses for his research. \\
+He has to find exact matches to genetic patterns in the DNA of the animals he has collected.
+However, it takes Bobby multiple weeks to manually check which animals contain the exact sequences of DNA he is looking for, so he could use a little help. \\
+Your task is to write a program that Bobby can use to find all the animals that contain a specific DNA sequence in his database.
+\begin{equation}
+\label{1}
+\alpha =  \{\trm{'A','C','T','G'}\}
+\end{equation}
+\subsection*{Input}
+The first line of input has a single integer $\trm{I}$ the number of animals in the database. \\
+Each of the following $\trm{I}$ lines depicts the genes of \animN as an unique non-empty string. \\
+The combined length of the $\trm{I}$ animals is promised to never exceed $\maxN$.
+\\
+Following the $\trm{I}$ lines is a single integer $\trm{K}$.
+The next $\trm{K}$ lines depicts a $\trm{query}_\trm{k}$ as an unique non-empty string. The total length of the $\trm{K}$ queries is promised to never exceed $\maxM$. \\ \\
+Both the $\trm{I}$ animals and the $\trm{K}$ queries consist exclusively of characters from the gene alphabet $\alpha$ (see equation 1). 
+
+\subsection*{Output}
+Given a database of animal genes you are to output the answer to each query on a single line. \\ 
+For simplicity the animals are numbered from $0$ to $I-1$. \\ 
+The answer to $\trm{query}_\trm{k}$ should be given as $Z \,\, z_0 \,\cdots \,\trm{z}_{\trm{Z}-1}$, where $Z$ denotes the count\\
+of animals containing the \trm{k}'th sequence 
+and $\trm{z}_0 \,\cdots \,\trm{z}_{\trm{Z}-1}$ is a space-separated integer set of the $Z$ animals. \\ 
+The $\trm{Z}$ animals should be given in ascending order such that 
+$\trm{animal}_\trm{j} \leq \trm{z}_{\trm{j}+1}$ for all $\trm{z} \, \epsilon \, \{\,0\,,\cdots\,,\trm{Z}-1\,\}$. 
